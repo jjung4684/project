@@ -1,0 +1,10 @@
+server:
+  port: 8081
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/survey?autoReconnect=true
+    username: dev_survey
+    password: devsurvey12345
