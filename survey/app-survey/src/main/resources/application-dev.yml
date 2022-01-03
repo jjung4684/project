@@ -8,3 +8,12 @@ spring:
     url: jdbc:mysql://localhost:3306/survey?autoReconnect=true
     username: dev_survey
     password: devsurvey12345
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    generate-ddl: false
+    show-sql: true
+  flyway:
+    enabled: true
+    baseline-on-migrate: true   # flyway_schema_history 테이블을 자동으로 생성할지 여부
+    baseline-version: 0         # 최초 버전 정보
